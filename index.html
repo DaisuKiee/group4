@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noche Buena Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;700&family=Noto+Serif:wght@400;700&family=Pacifico&family=Hind+Mysuru:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Hind Mysuru', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #9c292a
+            ;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            margin: 0.5rem;
+            text-align: center;
+        }
+
+        .card p {
+            font-family: 'Noto Serif', serif;
+            font-size: 1rem;
+            margin: 0.5rem;
+            text-align: justify;
+            padding: 0 1rem;
+        }
+
+        .card a {
+            display: block;
+            text-align: center;
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #337a55;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #285640;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #337a55;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header h2 {
+                font-size: 1.25rem;
+            }
+
+            .card h3 {
+                font-size: 1.25rem;
+            }
+
+            .card p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Noche Buena Shop</h1>
+        <h2>Delicious recipes for your festive celebrations</h2>
+    </header>
+
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="./mangofloat.jpg" alt="Mango Float">
+            <h3>Mango Float</h3>
+            <p>Experience the sweet and tangy flavors of ripe mangoes layered with creamy goodness and soft graham crackers. A true Filipino classic!</p>
+            <a href="#">View Recipe</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/1313812663666610186/1321139475329319002/spaghetti-carbonara-1200.png?ex=676c2684&is=676ad504&hm=9aaca34fbb1a53c3a510e077f02d1890250b4299b4fdf0cd5a81767cbb210b35&=&format=webp&quality=lossless&width=662&height=662" alt="Carbonara">
+            <h3>Carbonara</h3>
+            <p>Enjoy the creamy and savory goodness of Filipino-style Carbonara with a rich sauce and family-friendly flavors.</p>
+            <a href="#">View Recipe</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/1313812663666610186/1321139655403372564/puto-bumbong-close3-810x810-700x700.png?ex=676c26af&is=676ad52f&hm=61d935fc8f9322c57002ffb4d16f18e5476637eab6e908058d824fe953875641&=&format=webp&quality=lossless&width=437&height=437" alt="Puto Bumbong">
+            <h3>Puto Bumbong</h3>
+            <p>Savor the unique taste of steamed purple rice cakes, a traditional Filipino holiday treat.</p>
+            <a href="#">View Recipe</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/1313812663666610186/1321139839755620372/20220328-Embutido-Rezel-Apacionado-39-hero-79e4180e08ca45a3a02bf31564b0b339.png?ex=676c26db&is=676ad55b&hm=c1bff5e71402b102d2f295ac8e5686182a5b3d8be3c5134d252723d0da966819&=&format=webp&quality=lossless&width=583&height=437" alt="Embutido">
+            <h3>Embutido</h3>
+            <p>Delight in the flavors of this traditional Filipino meatloaf, perfect for any festive occasion.</p>
+            <a href="#">View Recipe</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Noche Buena Shop | All Rights Reserved
+    </footer>
+</body>
+</html>
